@@ -1,0 +1,22 @@
+# name = input("what is your name ").strip().capitalize()
+
+# if name == "Harry":
+#     print("your a wizard")
+# else :
+#     print("Hello")   
+
+
+# for i in range (30):
+#     if i%3==0 and i%5==0:
+#         print("Fizzbuz")
+#     elif i%5==0:
+#         print("Buzz")
+#     elif i%3==0:
+#         print("Fizz")
+#     else:
+#         print(i)
+
+
+
+
+

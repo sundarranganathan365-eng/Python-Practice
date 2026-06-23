@@ -1,0 +1,113 @@
+# def user (name):
+#     print(f"hello!",name, "welcome back !!")
+    
+# name1 = user("Sundar")
+# name2 = user("chatgpt")
+# name3 = user("chotu")
+
+
+# def cal (a,b,c):
+#     sum = (a+b+c)
+#     print(sum)
+#     av =((a+b+c)/3)
+#     print(av)
+# cal(20,20,20)
+
+
+# def even ():
+#     for i in range (0,1,6):
+#         if i % 2==0:
+#             print("even")
+#         else :
+#             print("odd")
+
+# even()
+
+# user = int(input("Enter your age : "))
+
+# try :
+
+
+#     if user>=1 and user<=12:
+#         print("User is kid !!!")
+#     elif user>=13 and user<=18:
+#         print("User is Teen!! ")
+#     elif user>=20 and user<=59:
+#         print("User is Adult!!!")
+#     elif user>=60 and user<=100:
+#         print("User is Old Age!!!")
+#     elif user == 0 :
+#         print("O can't be a age !! ")
+#     elif user<0:
+#         print("Age Canot be Negative !")
+#     elif user>105:
+#         print("Age Cannot be more then 105")
+    
+# except ValueError:
+#     print('Invalid input!!')
+
+
+
+
+
+# try:
+#     user = int(input(("Enter the Amount :")))
+#     if user<0:
+#         print("Amount Cannot be Negative !!!")
+#     elif user > 5000:
+#         print('Insufficent Amount!')
+#     else:
+#         bal = 5000-user
+#         print("Amount Withdrawn Successfully")
+#         print("Available Balance :",bal)
+# except ValueError:
+#     print("invalid input !!")
+
+
+
+
+# try :
+#     user = int(input("Emter the PIN:"))
+#     if user == 1234:
+#         print("Login Successfully")
+#     else:
+#         print("Inavlid PIN")
+    
+# except ValueError:
+#     print("PIN must be a number")
+
+
+
+    # f
+
+
+
+def add_notes():
+    user = input("Enter Note:")
+    file=open("notes.txt","a")
+    file.write(user + "\n")
+    file.close()
+
+def show_notes():
+    file = open("notes.txt","r")
+    data = file.read()
+    print(data)
+    file.close()
+
+while True :
+    print("_-_-_MENU_-_-_")
+    print('1.ADD NOTES!!')
+    print('2.SHOW NOTES!!')
+    print("3.EXIT!!")
+    print("CHOOSE OPTION")
+    user = int(input("CHOOSE THE OPTION: "))
+    if user ==1:
+        add_notes()
+        print("Noted!!!")
+    elif user==2:
+        print("_-_-_NOTES_-_-_")
+        show_notes()
+    elif user==3:
+        break
+    else:
+        print("Invalid Input!!!")
