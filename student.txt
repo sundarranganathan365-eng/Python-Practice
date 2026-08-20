@@ -1,1 +1,3 @@
 sundar,90
+mahi,80
+sundarraj,90
